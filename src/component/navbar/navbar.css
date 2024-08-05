@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.greenup__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-bg2);
+}
+
+.greenup__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.greenup__navbar-links_logo {
+  margin-right: auto; 
+}
+
+.greenup__navbar-links_logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.greenup__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.greenup__navbar-links_container p {
+  margin-right: 2rem;
+  color: white; 
+}
+
+.greenup__navbar-links_container a {
+  color: white; 
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.greenup__navbar-links_container a:hover {
+  color: var(--color-accent); 
+}
+
+.greenup__navbar-links_container p:last-child {
+  margin-right: 0;
+}
+
+.greenup__navbar-sign {
+  display: none; 
+  color: white; 
+  cursor: pointer; 
+}
+
+.greenup__navbar-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .greenup__navbar-links {
+    display: none;
+  }
+
+  .greenup__navbar-sign {
+    display: flex;
+    color: white; 
+    cursor: pointer; 
+    align-items: center;
+  }
+
+  .greenup__navbar-menu {
+    display: flex;
+  }
+
+  .greenup__navbar-menu_container {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--color-bg2);
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    gap: 2rem;
+    color: white; 
+    width: 200px; 
+  }
+
+  .greenup__navbar-menu_container a {
+    color: white; 
+    text-decoration: none; 
+  }
+
+  .greenup__navbar-menu_container a:hover {
+    color: var(--color-accent); 
+  }
+
+  .scale-up-center {
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .greenup__navbar-links_container {
+    display: flex;
+  }
+  .greenup__navbar-sign {
+    display: none; 
+  }
+  .greenup__navbar-menu {
+    display: none; 
+  }
+}

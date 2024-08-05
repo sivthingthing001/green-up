@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .greenup_footer {
+    display: grid;
+    grid-template-areas: 
+      "contactus QR"
+      "copyright copyright";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: var(--color-bg1);
+    width: 100vw;
+    min-height: 40vh; 
+    padding: 2rem; 
+    box-sizing: border-box; 
+  }
+  
+  .greenup_footer_contactus {
+    grid-area: contactus;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .greenup_footer_contactus h2 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: var(--font-family-secondary); 
+    margin-bottom: 1rem;
+  }
+  
+  .greenup_footer_contactus p {
+    font-size: 1rem;
+    color: white;
+    font-family: var(--font-family-secondary); 
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .greenup_footer_QR {
+    grid-area: QR;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .greenup_footer_QR h1 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: var(--font-family-secondary); 
+    margin-bottom: 1rem;
+  }
+  
+  .greenup_footer_QR img {
+    width: 150px; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .greenup_footer_copyright {
+    grid-area: copyright;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-family: var(--font-family-secondary); 
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 850px) {
+    .greenup_footer {
+      grid-template-areas: 
+        "contactus"
+        "QR"
+        "copyright";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr;
+    }
+  
+    .greenup_footer_QR h1 {
+      font-size: 1.1rem; 
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .greenup_footer_contactus h2,
+    .greenup_footer_QR h1 {
+      font-size: 1rem; 
+    }
+  
+    .greenup_footer_contactus p,
+    .greenup_footer_QR p {
+      font-size: 0.9rem; 
+    }
+  
+    .greenup_footer_QR img {
+      width: 120px; 
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .greenup_footer_contactus h2,
+    .greenup_footer_QR h1 {
+      font-size: 0.9rem; 
+    }
+  
+    .greenup_footer_contactus p,
+    .greenup_footer_QR p {
+      font-size: 0.8rem; 
+    }
+  
+    .greenup_footer_QR img {
+      width: 100px; 
+    }
+  }
+  
