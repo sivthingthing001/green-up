@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/green-up/static/css/main.28dc26d2.css",
+    "main.js": "/green-up/static/js/main.50de9df0.js",
+    "static/media/Blog.png": "/green-up/static/media/Blog.52865d2e85a698115f03.png",
+    "static/media/Product.png": "/green-up/static/media/Product.a77be6aa2a18300fa2b7.png",
+    "static/media/Certificate.png": "/green-up/static/media/Certificate.676a22df7d468c7ecac8.png",
+    "static/media/QR.png": "/green-up/static/media/QR.f5bf25c3d528abb993a5.png",
+    "static/media/Logo.png": "/green-up/static/media/Logo.43bcf8c4297662e3b28b.png",
+    "index.html": "/green-up/index.html",
+    "main.28dc26d2.css.map": "/green-up/static/css/main.28dc26d2.css.map",
+    "main.50de9df0.js.map": "/green-up/static/js/main.50de9df0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28dc26d2.css",
+    "static/js/main.50de9df0.js"
+  ]
+}
